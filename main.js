@@ -7,6 +7,11 @@ const userScoreSpan = document.querySelector("#user-score"),
   scissorsDiv = document.querySelector("#scissors"),
   resetButton = document.querySelector(".reset");
 
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    alert('You can not access the codes this way')
+});
+
 let userScore = 0,
   computerScore = 0;
 
